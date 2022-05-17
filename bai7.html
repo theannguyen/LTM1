@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let varr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let V = prompt("Nhập vào số V")
+
+    for (let i = 0; i < varr.length; i++) {
+        if (varr[i] == V) {
+            varr.splice(i, 1);
+            varr[varr.length -1] = 0;
+        }
+    }
+    document.write(varr)
+</script>
+</body>
+</html>
