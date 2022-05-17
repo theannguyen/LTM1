@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let varr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let V = prompt("Nhập vào số V")
+    let index = 0
+    for (let i = 0; i < varr.length; i++) {
+        if (varr[i] == V) {
+            index = true
+        }
+    }
+    if (index) {
+        document.writeln("V is in the array")
+    } else {
+        document.write("V is not in the array")
+    }
+</script>
+</body>
+</html>
