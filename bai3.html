@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1,7,5,32,2,4,11,9,10,3]
+    let max = arr[0]
+    index = 0
+    sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
+        if (max < arr[i]) {
+            max = arr[i]
+            index = 1
+        }
+    }
+    let tb = sum/arr.length
+    document.writeln("Số lớn nhất là: " + max);
+    document.write("Giá trị trung bình là: " + tb);
+
+</script>
+</body>
+</html>
